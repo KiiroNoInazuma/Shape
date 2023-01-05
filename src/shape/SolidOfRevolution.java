@@ -7,4 +7,9 @@ public class SolidOfRevolution extends Shape {
     double getRadius(){
         return radius;
     }
+
+    @Override
+    protected double getVolume() {
+        return 0;
+    }
 }

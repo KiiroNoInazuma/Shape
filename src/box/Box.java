@@ -2,14 +2,15 @@ package box;
 
 import shape.Shape;
 
-public class Box extends Shape {
+public class Box<T extends Shape> {
 
     void box(double size) {
 
     }
 
-    boolean add(Shape shape) {
+    boolean add(T shape) {
         return false;
     }
+
 
 }
