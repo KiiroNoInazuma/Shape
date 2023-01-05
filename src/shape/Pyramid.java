@@ -4,6 +4,10 @@ public class Pyramid extends Shape {
     private double s;
     private double h;
 
+    public Pyramid(double s, double h) {
+        setS(s);
+        setH(h);
+    }
 
     public double getVolume() {
         return s * h / 3;
