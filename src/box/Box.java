@@ -5,9 +5,10 @@ import shape.Shape;
 public class Box<T extends Shape> {
     private double size;
 
-    public void box(double size) {
+    public void setSize(double size) {
         this.size = size;
     }
+
 
     @SafeVarargs
     public final boolean add(T... shape) {
