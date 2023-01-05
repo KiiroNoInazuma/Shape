@@ -1,4 +1,10 @@
 package shape;
 
-abstract class Shape {
+public abstract class Shape {
+
+    private double volume;
+
+    double getVolume(){
+        return volume;
+    }
 }
