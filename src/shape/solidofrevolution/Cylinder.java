@@ -1,6 +1,5 @@
 package shape.solidofrevolution;
 
-
 import shape.SolidOfRevolution;
 
 public class Cylinder extends SolidOfRevolution {
