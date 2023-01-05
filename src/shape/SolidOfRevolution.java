@@ -1,15 +1,17 @@
 package shape;
 
-public class SolidOfRevolution extends Shape {
+
+public abstract class SolidOfRevolution extends Shape {
 
     private double radius;
 
-    double getRadius(){
+    protected double getRadius() {
         return radius;
     }
 
-    @Override
-    protected double getVolume() {
-        return 0;
+    public void setRadius(double radius) {
+        this.radius = radius;
     }
+
+
 }

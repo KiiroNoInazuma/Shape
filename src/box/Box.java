@@ -3,13 +3,19 @@ package box;
 import shape.Shape;
 
 public class Box<T extends Shape> {
+    private double size;
 
-    void box(double size) {
-
+    public void box(double size) {
+        this.size = size;
     }
 
-    boolean add(T shape) {
-        return false;
+    @SafeVarargs
+    public final boolean add(T... shape) {
+        double result = 0;
+        for (T t : shape) {
+            result += t.getVolume();
+        }
+        return result < size;
     }
 
 
