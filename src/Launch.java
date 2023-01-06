@@ -8,6 +8,6 @@ public class Launch {
         Box<Shape> box = new Box<>();
         box.setSize(35);
         System.out.println(box.add(ball));
-        System.out.println(ball.getVolume());
+        System.out.printf("%.2f",ball.getVolume());
     }
 }
